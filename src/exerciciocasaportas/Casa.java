@@ -23,25 +23,25 @@ public class Casa {
 		this.cor = cor;
 	}
 	
-//	public int quantasPortasEstaoAbertas() {
-//		int quantidade = 0;
-//		for (int i = 0; i < this.portas.size(); i++) {
-//			if (this.portas.get(i).estaAberta()) {
-//				quantidade++;
-//			}
-//		}
-//		return quantidade;
-//	}
-	
 	public int quantasPortasEstaoAbertas() {
 		int quantidade = 0;
-		for (Porta porta : this.portas) {
-			if (porta.estaAberta()) {
+		for (int i = 0; i < this.portas.size(); i++) {
+			if (this.portas.get(i).estaAberta()) {
 				quantidade++;
 			}
 		}
 		return quantidade;
 	}
+	
+//	public int quantasPortasEstaoAbertas() {
+//		int quantidade = 0;
+//		for (Porta porta : this.portas) {	
+//			if (porta.estaAberta()) {
+//				quantidade++;
+//			}
+//		}
+//		return quantidade;
+//	}
 	
 	public void adicionarPorta(Porta porta) {
 		this.portas.add(porta);
