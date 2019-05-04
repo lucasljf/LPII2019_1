@@ -1,0 +1,9 @@
+CREATE DATABASE bdJava1;
+USE bdJava1;
+
+CREATE TABLE aluno (
+	idAluno INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(50) NOT NULL,
+	idade INT NOT NULL,
+	PRIMARY KEY(idAluno)
+);
